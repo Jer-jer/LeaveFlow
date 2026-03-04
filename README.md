@@ -1,6 +1,7 @@
 # LeaveFlow - Workflow-Driven Leave Management System
 
 ![Static Badge](https://img.shields.io/badge/semver-0.0.1--skeleton-green)
+
 **Status**: ONGOING
 **Live Demo**: TBD
 **Deep Dive**: TBD
