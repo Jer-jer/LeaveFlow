@@ -1,6 +1,6 @@
 # LeaveFlow - Workflow-Driven Leave Management System
 
-![Static Badge](https://img.shields.io/badge/semver-0.0.0-green)
+![Static Badge](https://img.shields.io/badge/semver-0.0.1--skeleton-green)
 **Status**: ONGOING
 **Live Demo**: TBD
 **Deep Dive**: TBD
@@ -75,10 +75,19 @@ docs/
 
 ---
 
+## System Design
+
+LeaveFlow uses **Clean Architecture** to ensure testability and maintainability.
+
+- **Core Principle**: Business logic depends on nothing.
+- **Documentation**: See [Architecture Overview](docs/ARCHITECTURE.md) for dependency rules and diagrams.
+
+---
+
 ## Contact
 
 Built by Allan Jericho Bargamento as deliberate practice in system design.
 
 - Architecture questions: Open an issue
 - Security concerns: security@leaveflow.dev (PGP key in repo)
-- Hiring inquiries: [LinkedIn](https://linkedin.com/in/yourname)
+- Hiring inquiries: [LinkedIn](https://linkedin.com/in/allan-jericho)

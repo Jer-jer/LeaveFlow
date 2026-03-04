@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11520.95
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveFlow.Domain", "LeaveFlow.Domain\LeaveFlow.Domain.csproj", "{0AD66428-AD9B-4C8A-B22F-33957D0AEAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveFlow.Application", "LeaveFlow.Application\LeaveFlow.Application.csproj", "{88D23D3E-0C24-445F-BBB5-58742940D26F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0AD66428-AD9B-4C8A-B22F-33957D0AEAFE} = {0AD66428-AD9B-4C8A-B22F-33957D0AEAFE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveFlow.Infrastructure", "LeaveFlow.Infrastructure\LeaveFlow.Infrastructure.csproj", "{36613FFD-8692-47E5-B06D-65ECEF443B53}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0AD66428-AD9B-4C8A-B22F-33957D0AEAFE} = {0AD66428-AD9B-4C8A-B22F-33957D0AEAFE}
+		{88D23D3E-0C24-445F-BBB5-58742940D26F} = {88D23D3E-0C24-445F-BBB5-58742940D26F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveFlow.Web", "LeaveFlow.Web\LeaveFlow.Web.csproj", "{B53CB917-5DFD-4393-90FB-8988AB2AF7A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{88D23D3E-0C24-445F-BBB5-58742940D26F} = {88D23D3E-0C24-445F-BBB5-58742940D26F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveFlow.Worker", "LeaveFlow.Worker\LeaveFlow.Worker.csproj", "{BB8ACA14-21DD-466C-940B-04B2FEEAAE35}"
+	ProjectSection(ProjectDependencies) = postProject
+		{36613FFD-8692-47E5-B06D-65ECEF443B53} = {36613FFD-8692-47E5-B06D-65ECEF443B53}
+		{88D23D3E-0C24-445F-BBB5-58742940D26F} = {88D23D3E-0C24-445F-BBB5-58742940D26F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AD66428-AD9B-4C8A-B22F-33957D0AEAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD66428-AD9B-4C8A-B22F-33957D0AEAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD66428-AD9B-4C8A-B22F-33957D0AEAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD66428-AD9B-4C8A-B22F-33957D0AEAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88D23D3E-0C24-445F-BBB5-58742940D26F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D23D3E-0C24-445F-BBB5-58742940D26F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D23D3E-0C24-445F-BBB5-58742940D26F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D23D3E-0C24-445F-BBB5-58742940D26F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36613FFD-8692-47E5-B06D-65ECEF443B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36613FFD-8692-47E5-B06D-65ECEF443B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36613FFD-8692-47E5-B06D-65ECEF443B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36613FFD-8692-47E5-B06D-65ECEF443B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53CB917-5DFD-4393-90FB-8988AB2AF7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53CB917-5DFD-4393-90FB-8988AB2AF7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53CB917-5DFD-4393-90FB-8988AB2AF7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53CB917-5DFD-4393-90FB-8988AB2AF7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8ACA14-21DD-466C-940B-04B2FEEAAE35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8ACA14-21DD-466C-940B-04B2FEEAAE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8ACA14-21DD-466C-940B-04B2FEEAAE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8ACA14-21DD-466C-940B-04B2FEEAAE35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {788DA49A-853F-4F30-A45E-718E3653342F}
+	EndGlobalSection
+EndGlobal
