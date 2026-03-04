@@ -1,0 +1,135 @@
+# =============================================================================
+# LEAVEFLOW - .GITIGNORE
+# Stack: Windows 11, VS 2026, .NET 10, Docker, PostgreSQL, Redis
+# =============================================================================
+
+# --- .NET / MSBuild ---
+[Bb]in/
+[Oo]bj/
+*.user
+*.userprefs
+*.pidb
+*.suo
+*.csproj.DotSettings
+*.fsproj.DotSettings
+*.vbproj.DotSettings
+*.nproj.DotSettings
+*.dotSettings.user
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+arm64/
+AnyCPU/
+*.pdb
+*.dll
+*.exe
+*.so
+*.dylib
+
+# --- Visual Studio 2026 ---
+.vs/
+*.sln.docstates
+*.sln.ide/
+*.csproj.user
+*.fsproj.user
+*.vbproj.user
+*.msbuild.user
+*.builds
+*.cache
+*.log
+*.tmp
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.vcxproj.user
+*.opendb
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# --- Environment & Secrets (CRITICAL) ---
+# Never commit real secrets. Use .env.example to document required vars.
+.env
+.env.local
+.env.*.local
+appsettings*.secrets.json
+secrets.json
+*.pfx
+*.cer
+*.key
+*.pem
+*.crt
+
+# --- Docker ---
+# Keep docker-compose.yml, but ignore local overrides and data
+docker-compose.override.yml
+*.env
+!docker-compose.yml
+!docker-compose.prod.yml
+.docker/
+docker_data/
+
+# --- Test & Coverage ---
+TestResults/
+*.coverage
+*.coveragexml
+coverage.cobertura.xml
+coverage.json
+*.opencover.xml
+*.ncrunchproject
+
+# --- IDE / Editor (VS Code, Rider, etc.) ---
+.idea/
+*.swp
+*.swo
+*~
+.project
+*.sublime-*
+.vscode/
+*.code-workspace
+
+# --- OS Specific (Windows) ---
+[Dd]esktop.ini
+[Tt]humbs.db
+*.log
+*.tmp
+*.temp
+$RECYCLE.BIN/
+System Volume Information/
+
+# --- Node / Frontend (if HTMX/Alpine pulls in tooling later) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+*.min.js.map
+
+# --- Documentation / Temporary ---
+*.bak
+*.backup
+*.orig
+*.rej
+*.patch
+*.merge
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- Keep these (explicitly NOT ignored) ---
+# !docker-compose.yml
+# !docker-compose.prod.yml
+# !appsettings.json          # Template config (no secrets)
+# !appsettings.Development.json  # Dev config (no secrets)
+# !*.csproj
+# !*.sln
+# !README.md
+# !docs/
